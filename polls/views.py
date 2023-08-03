@@ -1,8 +1,13 @@
+"""
+The following views outline the functions to be called upon while the user is navigating the polls website.
+Note the use of the custom decorator which restricts non-logged in users from voting.
+
+"""
+
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 from .models import Question, Choice
-#from django.contrib.auth.decorators import login_required
 from .decorators import custom_login_required  # Import the custom decorator
 
 
@@ -14,19 +19,11 @@ def index(request):
     context = {'latest_question_list': latest_question_list}
     return render(request, "polls/poll.html", context)
 
-'''def detail(request, question_id):
-    return HttpResponse(f"You're looking at question {question_id}")'''
-
-'''def results(request, question_id):
-    response = f"You're looking at the results of question {question_id}"
-    return HttpResponse(response)'''
 
 def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return render(request, 'polls/detail.html', {'question': question})
 
-'''def vote(request, question_id):
-    return HttpResponse(f"You're voting on question {question_id}")'''
 
 # Using custom decorator which can be found in polls/decorators.py
 @custom_login_required
