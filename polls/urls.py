@@ -1,6 +1,6 @@
 """
 This Django app is a simple Polls website that allows users to create an account, login and vote on the polls.
-Below are the url paths that will determine the page the user sees. The default landing page is the login page.
+The url paths will determine the page the user sees. The default landing page is the login page.
 """
 from django.urls import path, include
 from . import views

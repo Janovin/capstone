@@ -1,6 +1,5 @@
 """
 The following views outline the functions to be called upon while the user is navigating the polls website.
-Note the use of the custom decorator which restricts non-logged in users from voting.
 
 """
 
