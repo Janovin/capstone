@@ -20,6 +20,10 @@ This application is polls application built with Python and Django.
 
     .\capstone\Scripts\activate
 
+   OR
+
+   .\capstone\Scripts\activate.bat
+
     Then install all the necessary requirements:
     
     pip install -r requirements.txt
