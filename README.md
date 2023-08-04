@@ -6,13 +6,13 @@ This application is polls application built with Python and Django.
 
 2. Create and activate a venv environment and install the requirments by entering the following commands,     assuming you already have Python installed:
 
-        py -m pip install pip
+           py -m pip install pip
 
-        py -m pip install --user virtualenv
+           py -m pip install --user virtualenv
 
-       py -m pip install --user virtualenvwrapper-win
+           py -m pip install --user virtualenvwrapper-win
 
-       py -m venv capstone
+           py -m venv capstone
     
     If that doesn't work, try replacing "py" with "python" or "python3"
 
@@ -37,7 +37,9 @@ This application is polls application built with Python and Django.
 1. Clone the repository to your computer
 
 2. Build a Docker image and container using the following commands:
-    docker build -t polls ./
-    docker run -p 8000:8000 polls app
 
-3. Visit 'http://localhost:8000/'
+   docker build -t polls ./
+   
+   docker run -p 8000:8000 polls app
+
+4. Visit 'http://localhost:8000/'
