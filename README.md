@@ -6,10 +6,13 @@ This application is polls application built with Python and Django.
 
 2. Create and activate a venv environment and install the requirments by entering the following commands,     assuming you already have Python installed:
 
-    py -m pip install pip
-    py -m pip install --user virtualenv
-    py -m pip install --user virtualenvwrapper-win
-    py -m venv capstone
+        py -m pip install pip
+
+        py -m pip install --user virtualenv
+
+       py -m pip install --user virtualenvwrapper-win
+
+       py -m venv capstone
     
     If that doesn't work, try replacing "py" with "python" or "python3"
 
@@ -21,10 +24,12 @@ This application is polls application built with Python and Django.
     
     pip install -r requirements.txt
 
-3. Run the server:
+4. Run the server:
 
     py manage.py runserver
+   
     OR
+   
     python manage.py runserver
 
 # Navigating the app using Docker
