@@ -40,6 +40,6 @@ This application is polls application built with Python and Django.
 
    docker build -t polls ./
    
-   docker run -p 8000:8000 polls app
+   docker run -p 8000:8000 polls
 
 4. Visit 'http://localhost:8000/'
